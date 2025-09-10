@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Farina Sewa Nomor WA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="menuBtn">☰</button>
+
+  <div id="menuPanel">
+    <div style="display:flex; justify-content:space-around; margin-bottom:15px;">
+      <button id="tabWithdraw" class="tab activeTab">Withdraw</button>
+      <button id="tabActivity" class="tab">Activity</button>
+    </div>
+    <span id="saldoDisplay">Saldo: Rp 0</span>
+    <div id="contentWithdraw">
+      <label>Nominal (Minimal Rp 10.000)</label>
+      <input type="number" id="withdrawAmount" placeholder="Masukkan jumlah">
+      <label>Metode Pembayaran</label>
+      <select id="withdrawMethod">
+        <option value="Dana">Dana</option>
+        <option value="Ovo">Ovo</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Seabank">Seabank</option>
+        <option value="BCA">BCA</option>
+      </select>
+      <label>Nomor Rek / E-Wallet</label>
+      <input type="text" id="withdrawNumber" placeholder="Masukkan nomor">
+      <button id="btnWithdraw">Kirim Withdraw</button>
+    </div>
+    <div id="contentActivity">
+      <ul id="activityList"></ul>
+    </div>
+  </div>
+
+  <header>
+    <img src="assets/farina.jpg" alt="Foto Farina">
+    <h1>SEWA NOMOR WHATSAPP BY FARINA</h1>
+    <p>Kami membuka jasa penyewaan nomor WhatsApp dengan sistem aman, cepat, dan praktis. Cukup isi form, Farina akan segera menghubungi Anda!</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>ℹ️ Tentang Layanan</h2>
+      <p>Layanan sewa nomor WhatsApp untuk kebutuhan tertentu. Aman dan terpercaya.</p>
+    </div>
+
+    <div class="card">
+      <h2>💰 Tarif Sewa</h2>
+      <div class="price-list">
+        <div><span>1 Hari</span><strong>Rp 100.000</strong></div>
+        <div><span>2 Hari</span><strong>Rp 150.000</strong></div>
+        <div><span>3 Hari</span><strong>Rp 200.000</strong></div>
+        <div><span>1 Jam</span><strong>Rp 50.000</strong></div>
+        <div><span>2 Jam</span><strong>Rp 100.000</strong></div>
+        <div><span>3 Jam</span><strong>Rp 200.000</strong></div>
+      </div>
+      <p style="color:#ffcc00; margin-top:10px;">⚠️ Catatan: Sewa per jam rawan banned, gunakan dengan risiko sendiri.</p>
+    </div>
+
+    <div class="card">
+      <h2>⭐ Keunggulan</h2>
+      <ul>
+        <li>Proses cepat dan aman.</li>
+        <li>Privasi nomor terjaga.</li>
+        <li>Durasi fleksibel sesuai kebutuhan.</li>
+        <li>Dukungan via Telegram.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📝 Form Penyewaan</h2>
+      <form id="formSewa">
+        <label>Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Nama kamu" required>
+        <label>Nomor WhatsApp</label>
+        <input type="text" id="nomor" placeholder="Nomor WhatsApp tujuan" required>
+        <label>Durasi Sewa</label>
+        <select id="durasi" required>
+          <option value="1 Jam (Rp 50.000)">1 Jam (Rp 50.000)</option>
+          <option value="2 Jam (Rp 100.000)">2 Jam (Rp 100.000)</option>
+          <option value="3 Jam (Rp 200.000)">3 Jam (Rp 200.000)</option>
+          <option value="1 Hari (Rp 100.000)">1 Hari (Rp 100.000)</option>
+          <option value="2 Hari (Rp 150.000)">2 Hari (Rp 150.000)</option>
+          <option value="3 Hari (Rp 200.000)">3 Hari (Rp 200.000)</option>
+        </select>
+        <button type="submit">Sewa Sekarang</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Farina Sewa Nomor WhatsApp — Aman, cepat, dan terpercaya.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
