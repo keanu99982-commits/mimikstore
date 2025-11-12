@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Reseller</title>
+</head>
+<body>
+<h2>Selamat Datang di Dashboard Reseller</h2>
+<p id="welcome"></p>
+
+<script>
+// ambil key dari URL
+const params = new URLSearchParams(window.location.search);
+const key = params.get('key');
+
+if(key) {
+  document.getElementById('welcome').textContent = `Kamu ada di sini! Key kamu: ${key}`;
+} else {
+  document.getElementById('welcome').textContent = 'Key tidak ditemukan.';
+}
+</script>
+</body>
+</html>
